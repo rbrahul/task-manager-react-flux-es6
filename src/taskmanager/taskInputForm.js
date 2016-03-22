@@ -13,6 +13,7 @@ export default class TaskForm extends Component{
       let task=text.value;
       console.log(task);
       TaskActions.createTask(task);
+      this.refs.texts.value="";
     }
 
     render(){
@@ -23,7 +24,7 @@ export default class TaskForm extends Component{
                 <form onSubmit={this.addNewTask.bind(this)}>
                     <div className="col-lg-12">
                           <div className="form-group">
-                          <input type="text" ref="texts" className="form-control" placeholder="Enter Ammount" />
+                          <input type="text" ref="texts" className="form-control" placeholder="Keep your task" />
                           </div>
                     </div>
                     

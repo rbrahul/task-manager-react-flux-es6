@@ -3,7 +3,18 @@ body {
 }
 
 .portfolio-item {
+	margin-left: 10px;
     margin-bottom: 25px;
+    background-image: url('../images/yellow-bg.jpg');
+    width: 280px;
+    height: 280px;
+    display: block;
+    background-repeat: no-repeat;
+    padding: 15px;
+    padding-top:40px;
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+
 }
 
 footer {

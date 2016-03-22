@@ -6,6 +6,7 @@ import Nav from './taskmanager/nav';
 import TaskLists from './taskmanager/taskListComponent';
 import TaskListHeading from './taskmanager/taskListHeading';
 import TaskInput from './taskmanager/taskInputForm';
+import Pagination from './taskmanager/pagination';
  
 class App extends Component {
 
@@ -39,9 +40,10 @@ return (
 <div>
 <Nav />
 
-<TaskListHeading/>
+
 <TaskInput/>
 <TaskLists tasks={this.state.tasks} />
+
 </div>
  
 );
