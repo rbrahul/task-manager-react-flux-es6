@@ -9,6 +9,14 @@ createTask(task){
 	task: task
 });
 	console.log("create a task");
+},
+
+deleteTask(taskId){
+	AppDispatcher.dispatch({
+	type: TaskConstants.DELETE_TASK,
+	id: taskId
+});
+	console.log("deleted a task");
 }
 
  

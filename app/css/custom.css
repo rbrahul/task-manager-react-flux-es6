@@ -11,10 +11,24 @@ body {
     display: block;
     background-repeat: no-repeat;
     padding: 15px;
-    padding-top:40px;
+    padding-top:10px;
     font-size: 20px;
     font-family: 'Kalam', cursive;
 
+}
+.portfolio-item .task-text{
+	margin-top:30px;
+}
+.task-deleter{
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-image: url('../images/closer.png');
+	display: none;
+}
+
+.portfolio-item:hover .task-deleter{
+	display: inline-block;
 }
 
 footer {

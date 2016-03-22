@@ -15,8 +15,8 @@ export default class TaskList extends Component{
     }
 
     render(){
-        const taskitems=this.state.tasks.map((task)=>{
-            return <TaskItem taskitem={task}/>
+        const taskitems=this.state.tasks.map((task,i)=>{
+            return <TaskItem taskid={i} taskitem={task}/>
         }.bind(this))
     return (
         <div>

@@ -24,6 +24,12 @@ case taskConstants.CREATE_TASK:
 tasks.push(action.task);
 __emitter.emit(CHANGE_EVENT);
 break;
+
+case taskConstants.DELETE_TASK:
+tasks.splice(action.id,1);
+__emitter.emit(CHANGE_EVENT);
+break;
+
 }
  
 });
